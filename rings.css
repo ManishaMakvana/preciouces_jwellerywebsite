@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#head-top {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(242, 104, 132);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#logo {
+    height: 80px;
+    width: 80px;
+    background-image: url(logo.jpg);
+    background-size: cover;
+}
+
+#list {
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 1.5px solid white;
+    border-radius: 20px;
+}
+
+.taga {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    text-decoration: none;
+}
+
+
+/* Dropdown styles */
+.dropdown-button,
+.dropdown-button1,
+.dropdown-button2 {
+    border: none;
+    background-color: inherit;
+    display: inline-block;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    text-decoration: none;
+}
+
+.dropdown, .dropdown1, .dropdown2 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content,
+.dropdown-content1,
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: rgb(54, 185, 185);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a,
+.dropdown-content1 a,
+.dropdown-content2 a {
+    color: rgb(153, 0, 0);
+    font-weight: 800;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover,
+.dropdown-content1 a:hover,
+.dropdown-content2 a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown.show .dropdown-content,
+.dropdown1.show .dropdown-content1,
+.dropdown2.show .dropdown-content2 {
+    display: block;
+}
+
+#search-input {
+    width: 220px;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.search-icon i,
+.account i,
+.wise i,
+.cart i {
+    width: 45px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+
+
+/* main*/
+.ringmain{
+    height: 400px;
+    width: 100%;
+    background-image: url(ring/Ringsmain.webp);
+    background-size: cover;
+}
+
+.ring-box{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-evenly;
+}
+
+.ringprice1,
+.ringprice2,
+.ringprice3,
+.ringprice4,
+.ringprice5,
+.ringprice6,
+.ringprice7,
+.ringprice8,
+.ringprice9,
+.ringprice10,
+.ringprice11,
+.ringprice12{
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+}
+
+.ringprice1{ background-image: url(ring/goldr/goldring1.jpeg);}
+.ringprice2{ background-image: url(ring/silverring/sr1.jpg);}
+.ringprice3{ background-image: url(ring/goldr/goldring10.jpeg);}
+.ringprice4{ background-image: url(ring/silverring/sr2.jpg);}
+.ringprice5{ background-image: url(ring/goldr/goldring3.jpeg);}
+.ringprice6{ background-image: url(ring/silverring/sr3.jpg);}
+.ringprice7{ background-image: url(ring/goldr/goldring4.jpeg);}
+.ringprice8{ background-image: url(ring/silverring/sr4.jpeg);}
+
+.ringprice9{ background-image: url(ring/goldr/goldring5.jpeg);}
+.ringprice10{ background-image: url(ring/silverring/sr5.jpeg);}
+.ringprice11{ background-image: url(ring/goldr/goldring6.jpeg);}
+.ringprice12{ background-image: url(ring/silverring/sr6.jpeg);}
+
+.btn1{
+    margin-top: 5px;
+    height: 30px;
+    width: 100px;
+    background-color: indianred;
+    color: #fff;
+    border: none;
+     
+}
+
+
+.choice{
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+.whish{
+    padding-left: 20px;
+    font-size: 30px;
+    color: indianred;
+}
+
+.check{   
+    display: flex;
+    margin-top: 5px;
+}
+
+.line{
+ color: #5c5a5a;
+ text-decoration: line-through;
+ margin-top: 5px;
+ margin-left: 8px;
+font-family: geograph-regular;
+}
+
+.seller_per{
+    font-weight: bolder;
+    margin-top: 5px;
+     margin-left: 8px;
+     font-family: geograph-regular;
+    }
+    
+
+/* footer*/
+    
+footer{
+    margin-top: 50px;
+    height: 200px;
+    width: 100%;
+    background-color:rgb(209, 100, 100) ;
+
+}
+
+.boxf{
+    
+    display: flex;
+    justify-content: space-around;
+    
+}
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+li{
+    padding-top: 10px;
+    margin-left: 30px;
+    list-style-type: none;
+    
+}
+h2{
+    color: #fff;
+}
+
+.product-actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}

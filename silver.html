@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nosering</title>
+
+    <style>
+        form{
+            font-size: 50px;
+        }
+        form input{
+            width: 300px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    
+    
+<form action="insert_silver.php" method="post" enctype="multipart/form-data">
+    <label for="name">Product Name:</label>
+    <input type="text" name="name" required><br><br>
+
+    <label for="category">Category:</label>
+    <input type="text" name="category" required><br><br>
+
+    <label for="price">Price:</label>
+    <input type="number" name="price" step="0.01" required><br><br>
+
+    <label for="sale_price">Sale Price:</label>
+    <input type="number" name="sale_price" step="0.01"><br><br>
+
+    <label for="image">Image:</label>
+    <input type="file" name="image" accept="image/*" required><br><br>
+
+    <input type="submit" value="Upload Product">
+</form>
+</body>
+</html>

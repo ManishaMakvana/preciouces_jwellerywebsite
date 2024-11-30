@@ -1,0 +1,245 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #444;
+}
+
+p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Container for the confirmation page */
+.confirmation-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Product details styling */
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-container img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.product-details h2 {
+    font-size: 24px;
+    color: #555;
+}
+
+.product-details p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Action buttons */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Remove button styling */
+.remove-button {
+    background-color: #dc3545;
+}
+
+.remove-button:hover {
+    background-color: #a71d2a;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .confirmation-container {
+        padding: 15px;
+    }
+
+    .product-details h2 {
+        font-size: 20px;
+    }
+
+    .product-details p {
+        font-size: 16px;
+    }
+
+    .button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #444;
+}
+
+p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Checkout Container */
+.checkout-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Product Details Styling */
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.image-container img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.product-details h2 {
+    font-size: 24px;
+    color: #555;
+}
+
+.product-details p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Checkout Form */
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkout-form label {
+    font-size: 16px;
+    color: #444;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.checkout-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.checkout-form button {
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.checkout-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Return to Products Button */
+.checkout-container a {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #6c757d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.checkout-container a:hover {
+    background-color: #5a6268;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .checkout-container {
+        padding: 15px;
+    }
+
+    .product-details h2 {
+        font-size: 20px;
+    }
+
+    .product-details p {
+        font-size: 16px;
+    }
+
+    .checkout-form label {
+        font-size: 14px;
+    }
+
+    .checkout-form input,
+    .checkout-form textarea {
+        font-size: 14px;
+    }
+
+    .checkout-form button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}

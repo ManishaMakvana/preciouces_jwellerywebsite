@@ -1,0 +1,491 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#head-top {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(242, 104, 132);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#logo {
+    height: 80px;
+    width: 80px;
+    background-image: url(logo.jpg);
+    background-size: cover;
+}
+
+#list {
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 1.5px solid white;
+    border-radius: 20px;
+}
+
+.taga {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    text-decoration: none;
+}
+
+
+/* Dropdown styles */
+.dropdown-button,
+.dropdown-button1,
+.dropdown-button2 {
+    border: none;
+    background-color: inherit;
+    display: inline-block;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    text-decoration: none;
+}
+
+.dropdown, .dropdown1, .dropdown2 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content,
+.dropdown-content1,
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: rgb(54, 185, 185);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a,
+.dropdown-content1 a,
+.dropdown-content2 a {
+    color: rgb(153, 0, 0);
+    font-weight: 800;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover,
+.dropdown-content1 a:hover,
+.dropdown-content2 a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown.show .dropdown-content,
+.dropdown1.show .dropdown-content1,
+.dropdown2.show .dropdown-content2 {
+    display: block;
+}
+
+#search-input {
+    width: 220px;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.search-icon i,
+.account i,
+.wise i,
+.cart i {
+    width: 45px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+
+
+
+
+
+/* Main part styles */
+.main-box {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    
+}
+a{
+    text-decoration: none;
+}
+
+.per{
+    font-size: 30px;
+    color:rgb(242, 104, 132) ;
+}
+
+.imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.earring-img1,
+.earring-img2,
+.earring-img3,
+.earring-img4,
+.earring-img5,
+.earring-img6 {
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.earring-img1 { background-image: url(earring/err1.jpeg); }
+.earring-img2 { background-image: url(necklace/necklace.jpeg); }
+.earring-img3 { background-image: url(watch/watch.jpeg); }
+.earring-img4 { background-image: url(nosering/nosering.jpeg); }
+.earring-img5 { background-image: url(ring/ring1.jpeg); }
+.earring-img6 { background-image: url(bags/bag1.jpeg); }
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(242, 104, 132);
+    font-weight: 600;
+    padding-left: 30px;
+}
+
+
+#head1{
+    color: rgb(242, 104, 132);
+    margin: 30px auto;
+    text-align: center;
+    font-size: 40px;
+    max-width: 600px;
+    position: relative;
+}
+
+#head1:before{
+    content: "";
+    display: block;
+    width: 400px;
+    height: 2px;
+    position: absolute;
+    background: #5a5959;
+    left: -300px;
+    top: 50%;
+}
+
+#head1:after{
+    content: "";
+    display: block;
+    width: 400px;
+    height: 2px;
+    position: absolute;
+    background: #575656;
+    right: -300px;
+    top: 50%;
+}
+/* gallery */
+.gallery-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.gallary{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    margin:  auto;
+}
+
+.gallary::-webkit-scrollbar{
+display: none;
+}
+
+
+.gallary #divo{
+    width: 100%;
+   
+    grid-template-columns: auto auto auto;
+    display: flex;
+}
+
+.offer-imges{
+    width: 100%;
+    display: flex;
+    
+}
+.offer-imges div{
+    filter: grayscale(0);
+    transition: transform 0.5s;
+}
+
+.offer-imges div:hover{
+    cursor: pointer;
+    filter: grayscale(50%);
+    transform: scale(1.1);
+}
+
+.offer1,.offer2,.offer3,.offer4,.offer5,.offer6 {
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    border-radius: 20px;
+    margin-left: 9px;
+}
+
+.offer1{ background-image: url(silvers/silv1.jpeg); }
+.offer2{ background-image: url(silvers/silv2.jpeg); }
+.offer3{ background-image: url(silvers/silv3.jpeg); }
+.offer4{ background-image: url(silvers/silv4.jpeg); }
+.offer5{ background-image: url(silvers/silv5.jpeg); }
+.offer6{ background-image: url(silvers/silv6.jpeg); }
+
+
+
+#offerimg{
+    margin-top: 20px;
+}
+
+
+/*SECND GOLD*/
+
+.jwelleryprice11{background-image: url(ring/goldr/goldring9.jpg);}
+.jwelleryprice12{background-image: url(necklace/gn1.jpg);}
+.jwelleryprice13{background-image: url(earring/ge3.jpeg);}
+.jwelleryprice14{background-image: url(necklace/gn2.jpg);}
+
+.jwelleryprice15{background-image: url(earring/ge8.jpeg);}
+.jwelleryprice16{background-image: url(nosering/nose2.jpeg);}
+.jwelleryprice17{background-image: url(ring/goldr/goldring7.jpg);}
+.jwelleryprice18{background-image: url(watch/watchgold1.jpeg);}
+
+.jwellerybox1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.jwellery1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    margin:  auto;
+}
+
+.jwellery1::-webkit-scrollbar{
+display: none;
+}
+
+
+.jwellery1 #jweprice1{
+    width: 100%;
+   
+    grid-template-columns: auto auto auto;
+    display: flex;
+}
+
+.jwelleryprice1{
+    width: 100%;
+    display: flex;
+    
+}
+.jwelleryprice1 div{
+    filter: grayscale(0);
+    transition: transform 0.5s;
+}
+
+.jwelleryprice1 div:hover{
+    cursor: pointer;
+    filter: grayscale(50%);
+    transform: scale(1.1);
+}
+
+.jwelleryprice11,
+.jwelleryprice12,
+.jwelleryprice13,
+.jwelleryprice14,
+.jwelleryprice15,
+.jwelleryprice16,
+.jwelleryprice17,
+.jwelleryprice18{
+    height: 312px;
+    width: 223px;
+    background-size: cover;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+
+
+    
+
+
+/*sale price*/
+
+.price1,.price2,.price3,.price4{
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    border-radius: 20px;
+    margin-left: 25px;
+}
+
+.price1{background-image: url(price/saleprice.webp);}
+.price2{background-image: url(price/saleprice2.webp);}
+.price3{background-image: url(price/saleprice3.webp);}
+.price4{background-image: url(price/saleprice4.webp);}
+
+
+.salebox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.sale{
+    
+    display: flex;
+    align-items: center;
+    margin:  auto;
+}
+
+
+   .saleprice{
+        width: 100%;
+        display: flex;
+        
+    }
+    .saleprice div{
+        transition: transform 0.5s;
+    }
+    
+    .saleprice div:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    /*jwellery*/
+
+.jwelleryprice1{background-image: url(collection/jwell1.webp);}
+.jwelleryprice2{background-image: url(collection/jwell2.webp);}
+.jwelleryprice3{background-image: url(collection/jwell3.webp);}
+.jwelleryprice4{background-image: url(collection/jwell4.webp);}
+
+.jwelleryprice5{background-image: url(collection/jwell5.webp);}
+.jwelleryprice6{background-image: url(collection/jwell6.webp);}
+.jwelleryprice7{background-image: url(collection/jwell7.webp);}
+.jwelleryprice8{background-image: url(collection/jwell8.webp);}
+
+.jwellerybox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.jwellery{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    margin:  auto;
+}
+
+.jwellery::-webkit-scrollbar{
+display: none;
+}
+
+
+.jwellery #jweprice{
+    width: 100%;
+   
+    grid-template-columns: auto auto auto;
+    display: flex;
+}
+
+.jwelleryprice{
+    width: 100%;
+    display: flex;
+    
+}
+.jwelleryprice div{
+    filter: grayscale(0);
+    transition: transform 0.5s;
+}
+
+.jwelleryprice div:hover{
+    cursor: pointer;
+    filter: grayscale(50%);
+    transform: scale(1.1);
+}
+
+.jwelleryprice1,
+.jwelleryprice2,
+.jwelleryprice3,
+.jwelleryprice4,
+.jwelleryprice5,
+.jwelleryprice6,
+.jwelleryprice7,
+.jwelleryprice8{
+    height: 312px;
+    width: 223px;
+    background-size: cover;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+
+/* footer*/
+
+footer{
+    margin-top: 50px;
+    height: 200px;
+    width: 100%;
+    background-color:rgb(209, 100, 100) ;
+
+}
+
+.boxf{
+    
+    display: flex;
+    justify-content: space-around;
+    
+}
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+li{
+    padding-top: 10px;
+    margin-left: 30px;
+    list-style-type: none;
+    
+}
+h2{
+    color: #fff;
+}
+

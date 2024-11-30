@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>terms or use</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="terms.js"></script>
+   <link rel="stylesheet" href="terms.css">
+</head>
+<body>
+
+
+    <header>
+        <div id="head-top">
+            <div id="logo" class="border"></div>
+
+            <div class="dropdown  border">
+                <button class="dropdown-button">SHOP BY CATEGORY</button>
+                <div class="dropdown-content">
+                    <a href="earrings.php">Earrings</a>
+                    <a href="nosering.php">Nose Ring</a>
+                    <a href="necklaces.php">Necklace</a>
+                    <a href="rings.php">Ring</a>
+                
+                   
+                </div>
+            </div>
+        
+            <div class="dropdown1 border">
+                <button class="dropdown-button1">SHOP BY LOOK </button>
+                <div class="dropdown-content1">
+                    <a href="gold_radiance.php">Gold Radiance</a>
+                    <a href="oxodise.php">Oxidised Jewels</a>
+                    <a href="silver.php"> Silver</a>
+                    <a href="kundan.php">Kundan</a>
+                </div>
+            </div>
+
+
+            <div class="dropdown2 border">
+                <button class="dropdown-button2">SHOP BY PRICE</button>
+                <div class="dropdown-content2">
+                    <a href="under.php">Under 999</a>
+                    <a href="under1499.php">999-1499</a>
+                    <a href="under1999.php">1499-1999</a> 
+                   
+                </div>
+            </div>
+           <!-- list  -->
+            <div id="list" class="border" >
+                <input placeholder="search items" id="search-input" class="border" >
+                <div class="search-icon ">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                
+<script>
+    document.getElementById('search-input').addEventListener('input', function () {
+        let filter = this.value.toLowerCase();
+        let products = document.querySelectorAll('.product-item');
+
+        products.forEach(function (product) {
+            let productName = product.querySelector('.product-name').textContent.toLowerCase();
+            let productCategory = product.querySelector('.category').textContent.toLowerCase();
+
+            // Check if the product name or category matches the search query
+            if (productName.includes(filter) || productCategory.includes(filter)) {
+                product.style.display = '';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+    });
+</script>
+            </div>
+                <div class="account border">
+                    <a href="registers.php"><i class="fa-regular fa-user" id="dropdown-content3"></i></a>
+                    
+                </div>
+                
+                <div class="wise border">
+                    <a href="wishlist.php" class="add-to-wishlist" data-id="product1"><i class="fa-regular fa-heart"></i></a>
+                </div>
+
+              <!-- Cart Icon Display -->
+<div class="cart border">
+    <i class="fa-solid fa-cart-shopping"></i>
+     <!-- To display the number of items in the cart -->
+</div>
+                                                <!-- JavaScript to handle the "Add to Cart" functionality -->
+
+
+
+
+               
+    </header>
+
+    <main>
+        
+
+            <div class="link">
+                <a href="home.html">Home
+                    </a>/ <a href="contect.html">Contact</a>
+            </div>
+
+
+            <div class="perg">
+                <h1>Conditions</h1><br>
+                <span>Please read the following terms and conditions of use agreement carefully</span><br><br>
+                <span>
+                    The following demonstrates terms and conditions of use (here-in-after referred to as an "Agreement"), applicable to your use of PrecicousPieces.com and PrecicousPieces.in (hereinafter referred to as "web site"), which promotes business between suppliers and buyers globally. It is an agreement between you as the user(s) of the web site (the "User(s)") and GBL Altair Pvt. Ltd. (Hereinafter referred to as "VFPL"). 
+                    Before you subscribe to and/or begin participating in or using web site, VFPL believes that user(s) have fully read, understood and accept the agreement. 
+                    If you do not agree to or wish to be bound by this agreement, you may not access or otherwise use the web site.</span>
+            </div>
+
+            <div class="perg" id="perg2">
+                <span>Cancellation Policy </span><br><br>
+                <span>
+                    Please note that there may be certain orders that we are unable to accept and must cancel. We reserve the right, at our sole discretion, to refuse or cancel any order for any reason. Some situations that may result in your order being cancelled include limitations on quantities available for purchase, inaccuracies or errors in product or pricing information, or problems identified by our credit and fraud avoidance department. We may also require additional verifications or information before accepting any order. We will contact you if all or any portion of your order is cancelled or if additional information is required to accept your order. If your order is cancelled after your credit card has been charged, the said amount will be reversed back in your Card Account.</span>
+            </div>
+           
+
+            <div class="perg" id="perg2">
+                <span>Cancellations by the Customer </span><br><br>
+                <span> 
+                    In case we receive a cancellation notice and the order has not been shipped by us, we shall cancel the order and refund the entire amount. The orders that have already been shipped out by us will not be cancelled and you will have to check our return policy on those orders. The customer agrees not to dispute the decision made by VFPL and accept VFPL's decision regarding the cancellation.</span>
+            </div>
+
+            <div class="imglogo">
+                <img src="aboutimg.webp" width="100%">
+            </div>
+    </main>
+    
+
+    <footer>
+        <div class="footer-box">
+            <div class="boxf">
+            <div class="boxf1" style="margin-top: 20px;">
+                <h2>Associate With Us</h2>
+                <ul>
+                    <li>
+                        <a href="about.html"><span>About</span></a>
+                    </li>
+    
+                    <li>
+                        <a href="contact.html"><span>Contact Us</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="boxf2"  style="margin-top: 20px;"> 
+                <h2>Policy Matters</h2>
+                <ul>
+                    <li>
+                        <a href="terms.html"><span>Terms of Use</span></a>
+                    </li>
+    
+                    <li>
+                        <a href="privacy.html"><span> Privacy Policy</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="boxf3" style="margin-top: 20px;">
+                <ul>
+                    <li>
+                        <span><i class="fa-brands fa-whatsapp"></i></span>
+                        <span>+91 72300 66751</span>
+                    </li>
+    
+                    <li>
+                        <span><i class="fa-regular fa-envelope"></i></span>
+                        <span>help@preciouces.com</span>
+                    </li>
+                    <li>
+                        <span>Gujarat, Gandhinage-382006</span> 
+                        <span>India</span>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </footer>
+    
+    
+    </body>
+    </html>

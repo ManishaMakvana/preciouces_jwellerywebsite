@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+h1{
+    color: rgb(245, 76, 109);
+
+}
+
+
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: pink;
+    border-radius:20%;
+    margin-top: 10%;
+    margin-left: 30%;
+}
+
+.box{
+   padding-left: 15%;
+   padding-top: 25%;
+   color: white;
+   font-size: 20px;
+
+}
+
+.form-input{
+    width: 210px;
+    height: 25px;
+}
+
+a{
+    margin-left: 10px;
+}
+
+#btn1 {
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+   font-weight: 600;
+    flex-direction: column;
+    background-color: rgb(242, 104, 132);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}

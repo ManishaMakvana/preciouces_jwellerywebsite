@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(218, 214, 214);
+}
+
+#header{
+    color: rgb(245, 76, 109);
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   min-height: 90vh;
+}
+
+.box{
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0,0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5)
+}
+
+.form-box{
+     width: 450px;
+     margin: 0px 10px;
+}
+
+.form-box header{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+}
+ .field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+#btn1 {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+   font-weight: 600;
+    flex-direction: column;
+    background-color: rgb(242, 104, 132);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+.field-input{
+    margin-top: 10px;
+}
+.field-input input{
+    height: 40px;
+    width: 100%;
+    padding-top: 10px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-top: 5px;
+}
+
+.field input{
+    height: 30px;
+    width: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a{
+    margin-left: 10px;
+}
+
+
+.back a{
+    cursor: pointer;
+    
+    margin-left: 40%;
+    color: gray;
+    text-decoration: none;
+}
+.back{
+    margin-top: 10px;
+}
+

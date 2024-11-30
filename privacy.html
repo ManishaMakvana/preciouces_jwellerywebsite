@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="privay.js"></script>
+   <link rel="stylesheet" href="privacy.css">
+</head>
+<body>
+    
+    <header></header>
+        <div id="head-top">
+            <div id="logo" class="border"></div>
+
+            <div class="dropdown  border">
+                <button class="dropdown-button">SHOP BY CATEGORY</button>
+                <div class="dropdown-content">
+                    <a href="earrings.html">Earrings</a>
+                    <a href="nosering.html">Nose Ring</a>
+                    <a href="necklaces.html">Necklace</a>
+                    <a href="watch.html">Watches</a>
+                    <a href="rings.html">Ring</a>
+                    <a href="bags.html">Bags</a>
+                   
+                </div>
+            </div>
+        
+            <div class="dropdown1 border">
+                <button class="dropdown-button1">SHOP BY LOOK </button>
+                <div class="dropdown-content1">
+                    <a href="gold_radiance.html">Gold Radiance</a>
+                    <a href="oxodise.html">Oxidised Jewels</a>
+                    <a href="diamond.html"> American Diamond</a>
+                    <a href="silver.html"> Silver</a>
+                    <a href="kundan.html">Kundan</a>
+                </div>
+            </div>
+
+
+            <div class="dropdown2 border">
+                <button class="dropdown-button2">SHOP BY PRICE</button>
+                <div class="dropdown-content2">
+                    <a href="#">Under 999</a>
+                    <a href="#">999-1499</a>
+                    <a href="#">1499-1999</a> 
+                    <a href="#">2000 & above</a>
+                </div>
+            </div>
+           <!-- list  -->
+            <div id="list" class="border" >
+                <input placeholder="search items" id="search-input" class="border" >
+                <div class="search-icon ">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                                          <script>document.getElementById('search-input').addEventListener('input', function() {
+                                            let filter = this.value.toLowerCase();
+                                            let sellers = document.querySelectorAll('.seller');
+                                        
+                                            sellers.forEach(function(seller) {
+                                                let itemText = seller.querySelector('.seller_p').textContent.toLowerCase();
+                                                if (itemText.includes(filter)) {
+                                                    seller.style.display = '';
+                                                } else {
+                                                    seller.style.display = 'none';
+                                                }
+                                            });
+                                        });</script>
+            </div>
+                <div class="account border">
+                    <a href="account.php"><i class="fa-regular fa-user" id="dropdown-content3"></i></a>
+                    
+                </div>
+                <div class="wise border">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="cart border">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            
+        </div>
+               
+    </header>
+
+    <main>
+        
+
+            <div class="link">
+                <a href="home.html">Home
+                    </a>/ <a href="contect.html">Contact</a>
+            </div>
+
+
+            <div class="perg">
+                <h1>Privacy policy</h1><br>
+                <span>Collection of Information</span><br><br>
+
+                <span>If you browse through this site without providing us with any personal information, we will gather and store some information about your visit, such as IP address, type of browser and operating system used, date and time you access our site, pages you visit, and if you linked to our website from another website, the address of that website. This information will not identify you personally and will not be linked back to you.</span>
+            </div>
+
+            <div class="perg" id="perg2">
+                <span>Use and Sharing of Information</span><br><br>
+                <span>At no time will we sell your personally-identifiable data without your permission unless set forth in this Privacy Policy. The information we receive about you or from you may be used by us or shared by us with our corporate affiliates, dealers, agents, vendors and other third parties to help process your request; to comply with any law, regulation, audit or court order; to help improve our website or the products or services we offer; for research; to better understand our customers' needs; to develop new offerings; and to alert you to new products and services (of us or our business associates) in which you may be interested. We may also combine information you provide us with information about you that is available to us internally or from other sources in order to better serve you. We do not share, sell, trade or rent your personal information to third parties for unknown reasons.</span>
+            </div>
+           
+
+            <div class="perg" id="perg2">
+                <span>Security</span><br><br>
+                <span>We safeguard your privacy using known security standards and procedures and comply with applicable privacy laws. Our websites combine industry-approved physical, electronic and procedural safeguards to ensure that your information is well protected though it's life cycle in our infrastructure. Sensitive data is hashed or encrypted when it is stored in our infrastructure. Sensitive data is decrypted, processed and immediately re-encrypted or discarded when no longer necessary. We host web services in audited data centers, with restricted access to the data processing servers. Controlled access, recorded and live-monitored video feeds, 24/ 7 staffed security and biometrics provided in such data centers ensure that we provide secure hosting.</span>
+            </div>
+
+            <div class="imglogo">
+                <img src="aboutimg.webp" width="100%">
+            </div>
+    </main>
+    
+
+    <footer>
+        <div class="footer-box">
+            <div class="boxf">
+            <div class="boxf1" style="margin-top: 20px;">
+                <h2>Associate With Us</h2>
+                <ul>
+                    <li>
+                        <a href="about.html"><span>About</span></a>
+                    </li>
+    
+                    <li>
+                        <a href="contect.html"><span>Contact Us</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="boxf2"  style="margin-top: 20px;"> 
+                <h2>Policy Matters</h2>
+                <ul>
+                    <li>
+                        <a href="terms.html"><span>Terms of Use</span></a>
+                    </li>
+    
+                    <li>
+                        <a href="privacy.html"><span> Privacy Policy</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="boxf3" style="margin-top: 20px;">
+                <ul>
+                    <li>
+                        <span><i class="fa-brands fa-whatsapp"></i></span>
+                        <span>+91 72300 66751</span>
+                    </li>
+    
+                    <li>
+                        <span><i class="fa-regular fa-envelope"></i></span>
+                        <span>help@preciouces.com</span>
+                    </li>
+                    <li>
+                        <span>Gujarat, Gandhinage-382006</span> 
+                        <span>India</span>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    
+
+
+</body>
+</html>
